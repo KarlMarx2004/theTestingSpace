@@ -1,0 +1,23 @@
+#Website-title {
+  color: black;
+  font-size: 36px;
+
+}
+
+ul > li {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.nav-link {
+  color: black;
+}
+
+#left-navbar {
+  margin-left: 100px;
+}
+
+.social-media {
+  color: black;
+  font-size: 30px
+}
