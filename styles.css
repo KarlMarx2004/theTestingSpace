@@ -4,17 +4,13 @@
 
 }
 
-ul > li {
-  padding-left: 20px;
-  padding-right: 20px;
-}
 
 .nav-link {
   color: black;
 }
 
-#left-navbar {
-  margin-left: 100px;
+.left-navbar {
+  margin-left: 50px;
 }
 
 .social-media {
