@@ -18,7 +18,7 @@
 <body>
 
   <nav class="navbar navbar-expand flex-column flex-md-row bd-navbar">
-    <a class="navbar-brand" id="Website-title" href="#" style="color: black; font-size: 36px;">ThatPythonGuys</a>
+    <a class="navbar-brand" id="Website-title" href="/" style="color: black; font-size: 36px;">ThatPythonGuys</a>
     <div class="navbar-nav-scroll">
     </div>
 
@@ -48,14 +48,6 @@
         <a class="nav-link left-navbar" href="/sciencebowl">Science Bowl</a>
       </li>
 
-      <li class="nav-item dropdown left-navbar last-nav-item">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-      </li>
-
       <li>
         <a class="nav-link left-navbar disabled" href="#">Daily AMC Posts</a>
       </li>
@@ -70,23 +62,22 @@
   <aside class="col-lg-3">
     <header>
 
-      <h2>AMC Posts!</h2>
+      <h2>Blog Posts</h2>
     </header>
 
     <hr>
 <!-- Below lies the vertical navigation bar and footer-->
     <ul class="nav flex-column">
+      {% for post in site.posts limit:3 %}
       <li class="nav-item">
-        <a class="nav-link active" href="#">4/4/20</a>
+        <a class="nav-link active" href="{{ post.url }}">{{ post.title }}</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#"> More posts soon!</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">More posts soon!</a>
+      {% endfor %}
+
+      <li class = "nav-item">
+        <a class = "nav-link active" href="/postlist"> See all posts</a>
       </li>
     </ul>
-
     <hr>
 
     <footer>
@@ -106,8 +97,8 @@
   </aside>
 
 <!-- This is the main content of the page-->
-  <main class="col-sm-6">
-    <h3>The Unofficial Worked AMC Blog</h3>
+  <main class="col-sm-8">
+    <h3>Math Blog</h3>
     <hr>
 
     {{ content }}

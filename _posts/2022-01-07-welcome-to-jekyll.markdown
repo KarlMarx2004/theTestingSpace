@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Thoughts on 1/07/22"
 date:   2020-05-28 12:18:26 -0500
 categories: jekyll update
 permalink: /hello/
